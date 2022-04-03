@@ -29,7 +29,11 @@
           <hr />
 
           <div class="d-flex justify-content-end">
-            <button class="btn small text-muted" data-testid="delete-btn">
+            <button
+              @click="deleteUsers(user)"
+              class="btn small text-muted"
+              data-testid="delete-btn"
+            >
               Delete
             </button>
           </div>
@@ -44,13 +48,18 @@ export default {
   name: "UserCard",
   props: {
     users: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => {},
       required: true,
     },
   },
   data() {
     return {};
+  },
+  methods: {
+    deleteUsers(item) {
+      this.$store.dispatch("setRemoveUser", item.id);
+    },
   },
 };
 </script>

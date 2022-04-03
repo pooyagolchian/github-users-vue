@@ -2,6 +2,15 @@ body {
   background-color: #f1f1f1;
 }
 
+a {
+  color: #333;
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+  }
+}
+
 .page-center {
   display: flex;
   justify-content: center;
