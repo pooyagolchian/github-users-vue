@@ -64,7 +64,6 @@ In addition, I check pretty before every commit by add a pre-commit hook. For mo
 
 Husky is used for git hook pre-commit to format all code with Prettier.
 
-
 ### SOLID
 
 Regarding the `S` for `SOLID` I just tried to keep each function(component as a function as well) to
