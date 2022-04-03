@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  name: "UserCard",
+  name: 'UserCard',
   props: {
     users: {
       type: Object,
@@ -54,12 +54,12 @@ export default {
     },
   },
   data() {
-    return {};
+    return {}
   },
   methods: {
     deleteUsers(item) {
-      this.$store.dispatch("setRemoveUser", item.id);
+      this.$store.dispatch('setRemoveUser', item.id)
     },
   },
-};
+}
 </script>

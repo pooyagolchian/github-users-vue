@@ -31,28 +31,28 @@
 </template>
 
 <script>
-import UserCard from "@/components/UserCard";
-import SVGLoader from "@/components/SVGLoader";
+import UserCard from '@/components/UserCard'
+import SVGLoader from '@/components/SVGLoader'
 
 export default {
   components: { SVGLoader, UserCard },
   computed: {
     users() {
-      return this.$store.state.users;
+      return this.$store.state.users
     },
     isLoadingState() {
-      return this.$store.state.isLoading;
+      return this.$store.state.isLoading
     },
   },
   methods: {
     handleRefresh() {
-      window.location.reload();
+      window.location.reload()
     },
   },
   async mounted() {
-    await this.$store.dispatch("setLoading", true);
-    await this.$store.dispatch("getUsers");
-    await this.$store.dispatch("setLoading", false);
+    await this.$store.dispatch('setLoading', true)
+    await this.$store.dispatch('getUsers')
+    await this.$store.dispatch('setLoading', false)
   },
-};
+}
 </script>

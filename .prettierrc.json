@@ -1,0 +1,18 @@
+{
+  "semi": false,
+  "overrides": [
+    {
+      "files": ["*.js", "*.vue", "*.css", "*.scss"],
+      "options": {
+        "semi": false,
+        "singleQuote": true
+      }
+    },
+    {
+      "files": ["*.html", "*.js", "*.vue", "*.css", "*.scss"],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}
